@@ -19,11 +19,19 @@
 
   </head>
   <body>
-      <div class="wrapper">
+    <div class="wrapper">
+
       <section>
-       <div id="picture" align="center"> <a href="/"> <img src="/assets/images/pattern.png" width=100%> </a> </div>
-       <hr>
+        <div id="picture" align="center">
+	<a href="/">
+	<img src="/assets/images/pattern.png" width=50%></div>
+	</a>
+        <div id="title" align="center">
+          <h2>{{ page.title | default: site.github.repository_name }}</h2>
+          <hr>
+        </div>
         {{ content }}
+
       </section>
 
 <div class="footer">
@@ -32,6 +40,7 @@ Ram Bharadwaj<br>
 <a href="https://www.kaggle.com/rambharadwaj">On kaggle</a><br>
 <a href="https://stackexchange.com/users/12030273/thecomplexitytheorist">On SE</a><br>
 thecomplexitytheorist@gmail.com<br>
+</div>
 </div>
 
     {% if site.google_analytics %}
